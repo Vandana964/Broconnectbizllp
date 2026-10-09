@@ -730,3 +730,62 @@ h1 {
   .copyright { flex-direction: column; gap: 5px; }
   .whatsapp { right: 14px; bottom: 14px; }
 }
+
+/* Image display fixes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-photo {
+  height: 420px;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.thumb {
+  height: 220px;
+  overflow: hidden;
+  background: #edf2f8;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-stack .main-img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-stack .small-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 520px) {
+  .hero-photo {
+    height: 285px;
+  }
+
+  .thumb {
+    height: 210px;
+  }
+
+  .image-stack .main-img {
+    height: 310px;
+  }
+}
